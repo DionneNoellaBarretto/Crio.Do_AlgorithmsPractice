@@ -1,0 +1,93 @@
+2021-12-11 23:34:28,812 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     CONTAINER_REQUEST_COUNT: 0
+2021-12-11 23:34:28,812 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Fetching me assessment
+2021-12-11 23:34:28,812 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     ME Assessment fetched - {'meId': 'ME_FE2_ES6_PRACTICE', 'stages': [<BuildStageType.BUILD_STAGE_TYPE_SETUP: 'setup'>, <BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING: 'unitTesting'>], 'assessmentEndpoint': 'https://me-fe2-es6-practice-prod-nnjjst7g5q-uc.a.run.app/', 'fargateTaskDefinition': None, 'meFolder': 'me_es6'}
+2021-12-11 23:34:28,812 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Starting assessment
+2021-12-11 23:34:29,302 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Running assessment stage setup
+2021-12-11 23:34:29,303 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     {'buildId': '706caed5-8068-46bc-adef-ca15fb676b14', 'userId': 'denverdionne', 'cohortId': 'COHORT_ME_FE2_ES6_PRACTICE_ENROLL_LATEST', 'meId': 'ME_FE2_ES6_PRACTICE', 'moduleId': 'ME_FE2_ES6_PRACTICE_MODULE_ARRAYSIMPLEES6', 'buildType': 'BUILD_TYPE_SUBMIT', 'assessmentType': 'ASSESSMENT_TYPE_UNTIMED', 'questionId': 'QUESTION_ArraySimpleES6', 'psDsContext': {'codeId': 9418177, 'inputs': [], 'codeData': {'code': '\nfunction removeListedValues(arr, without) {\n     let newArr = []\n\n     for (let i = 0; i < arr.length; i++) {\n          let arrElem = arr[i];\n          let match = false;\n          \n          for (let j = 0; j < without.length; j++) {\n               let woElem = without[j];\n              \n               if (arrElem === woElem ) {\n                    match = true;\n               }\n               \n          }\n          if (match === false){\n                    newArr.push(arrElem);\n          }\n     }\nreturn newArr;\n}\nlet arr = [1, 2, 2, 3, 1, 2];\nlet without = [2, 3];\n\nmodule.exports = removeListedValues;\n\n/*\nCrio Methodology\n\nMilestone 1: Understand the problem clearly\n1. Ask questions & clarify the problem statement clearly.\n2. Take an example or two to confirm your understanding of the input/output & extend it to test cases\nMilestone 2: Finalize approach & execution plan\n1. Understand what type of problem you are solving.\n     a. Obvious logic, tests ability to convert logic to code\n     b. Figuring out logic\n     c. Knowledge of specific domain or concepts\n     d. Knowledge of specific algorithm\n     e. Mapping real world into abstract concepts/data structures\n2. Brainstorm multiple ways to solve the problem and pick one\n3. Get to a point where you can explain your approach to a 10 year old\n4. Take a stab at the high-level logic & write it down.\n5. Try to offload processing to functions & keeping your main code small.\nMilestone 3: Code by expanding your pseudocode\n1. Make sure you name the variables, functions clearly.\n2. Avoid constants in your code unless necessary; go for generic functions, you can use examples for your thinking though.\n3. Use libraries as much as possible\nMilestone 4: Prove to the interviewer that your code works with unit tests\n1. Make sure you check boundary conditions\n2. Time & storage complexity\n3. Suggest optimizations if applicable\n*/', 'languageType': 'LANGUAGE_TYPE_JAVASCRIPT'}}, 'timestampInMs': 1639265668612, 'meAssessment': {'meId': 'ME_FE2_ES6_PRACTICE', 'stages': [<BuildStageType.BUILD_STAGE_TYPE_SETUP: 'setup'>, <BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING: 'unitTesting'>], 'assessmentEndpoint': 'https://me-fe2-es6-practice-prod-nnjjst7g5q-uc.a.run.app/', 'fargateTaskDefinition': None, 'meFolder': 'me_es6'}, 'workingDir': '//denverdionne-ME_FE2_ES6_PRACTICE-706caed5-8068-46bc-adef-ca15fb676b14'}
+2021-12-11 23:34:29,303 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Getting user data...
+2021-12-11 23:34:29,303 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     
+Received user data in 2.193450927734375e-05 seconds
+
+2021-12-11 23:34:29,303 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Getting crio data...
+2021-12-11 23:34:29,304 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     
+Received and unzipped crio data in 0.0009551048278808594 seconds
+
+2021-12-11 23:34:29,305 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     
+Time taken for setup stage: 0.001997232437133789s
+2021-12-11 23:34:29,305 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     BuildStageType.BUILD_STAGE_TYPE_SETUP stage complete. Report: {'userDir': '//denverdionne-ME_FE2_ES6_PRACTICE-706caed5-8068-46bc-adef-ca15fb676b14/solution'}
+2021-12-11 23:34:29,795 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Running assessment stage unitTesting
+2021-12-11 23:34:29,796 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Validating syntax...
+2021-12-11 23:34:29,892 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Running the tests...
+2021-12-11 23:34:32,689 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Test logs : 
+> ArraySimple@1.0.0 test /denverdionne-ME_FE2_ES6_PRACTICE-706caed5-8068-46bc-adef-ca15fb676b14/solution
+> jest "--reporters=jest-junit" "--reporters=default" "--verbose" "--forceExit"
+
+PASS __tests__/solution.tests.js
+  Sample Testcases
+    ✓ should return [1, 1] (3 ms)
+  Base Testcases
+    ✓ should return [3, 4, 6, 7] (1 ms)
+    ✓ should return [9, 3, 15, 50, 3] (1 ms)
+    ✓ should return [19, 101, 50, 20]
+    ✓ should return [1, 2, 2, 1]
+  Edge Testcases
+    ✓ should return empty array (1 ms)
+    ✓ should return [2]
+    ✓ should return an empty array (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        0.802 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+
+2021-12-11 23:34:32,690 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Time taken to test code 2.795886993408203
+2021-12-11 23:34:32,691 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     
+Time taken for unit_testing stage: 2.8951432704925537s
+2021-12-11 23:34:32,691 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING stage complete. Report: {'Base Testcases should return [1, 2, 2, 1]': 'TEST_STATUS_SUCCESS', 'Base Testcases should return [19, 101, 50, 20]': 'TEST_STATUS_SUCCESS', 'Base Testcases should return [3, 4, 6, 7]': 'TEST_STATUS_SUCCESS', 'Base Testcases should return [9, 3, 15, 50, 3]': 'TEST_STATUS_SUCCESS', 'Edge Testcases should return [2]': 'TEST_STATUS_SUCCESS', 'Edge Testcases should return an empty array': 'TEST_STATUS_SUCCESS', 'Edge Testcases should return empty array': 'TEST_STATUS_SUCCESS', 'Sample Testcases should return [1, 1]': 'TEST_STATUS_SUCCESS'}
+2021-12-11 23:34:32,719 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Found bucket assessment-build-logs-prod
+2021-12-11 23:34:32,855 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     
+Files from stages uploaded in 0.13567113876342773 seconds
+
+2021-12-11 23:34:32,855 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     Build Report formed:
+2021-12-11 23:34:32,856 build-706caed5-8068-46bc-adef-ca15fb676b14 INFO     {
+    "buildId": "706caed5-8068-46bc-adef-ca15fb676b14",
+    "userId": "denverdionne",
+    "meId": "ME_FE2_ES6_PRACTICE",
+    "cohortId": "COHORT_ME_FE2_ES6_PRACTICE_ENROLL_LATEST",
+    "buildType": "BUILD_TYPE_SUBMIT",
+    "questionId": "QUESTION_ArraySimpleES6",
+    "stages": [
+        {
+            "type": "BUILD_STAGE_TYPE_SETUP",
+            "status": "BUILD_STAGE_STATUS_SUCCESS",
+            "feedback": null,
+            "report": {
+                "userDir": "//denverdionne-ME_FE2_ES6_PRACTICE-706caed5-8068-46bc-adef-ca15fb676b14/solution"
+            },
+            "logPath": "https://storage.googleapis.com/assessment-build-logs-prod/denverdionne-ME_FE2_ES6_PRACTICE/build-706caed5-8068-46bc-adef-ca15fb676b14/setup.log?Expires=1670801672&GoogleAccessId=storage-service%40crio-prod.iam.gserviceaccount.com&Signature=gsXcjGszfXIzpqpHqUP5y7bLDjyKkbyYhqzMXtGx44zALdja0o1%2Fjt%2Btd9EtEDnkXIdVtH2codTbtj5llUkWLKxeGvP7r9RzDpf8JBj9dbozlV6oRRm0gGRz8t4fEnvCtBBeAzEcjwEAG4JNX0J7FI6NaKloNte0ZElDfDZW%2FB8v7lTNvZ7083GeLfU5LNrH3gMa7kHBtANxKzQN7YmSTDZb3oX04ZNfreO%2Fb1P76ZQCMqJEK2PX2V2c8azKbNuR5eCFX7482STUl4iH6eat9qI6x8NrjK%2FbLef2n%2F9AHubf3cmt8zK3De0qufrGqc%2F5V7eDUCJloDzT84T6rjINBA%3D%3D"
+        },
+        {
+            "type": "BUILD_STAGE_TYPE_UNIT_TESTING",
+            "status": "BUILD_STAGE_STATUS_SUCCESS",
+            "feedback": null,
+            "report": {
+                "Base Testcases should return [1, 2, 2, 1]": "TEST_STATUS_SUCCESS",
+                "Base Testcases should return [19, 101, 50, 20]": "TEST_STATUS_SUCCESS",
+                "Base Testcases should return [3, 4, 6, 7]": "TEST_STATUS_SUCCESS",
+                "Base Testcases should return [9, 3, 15, 50, 3]": "TEST_STATUS_SUCCESS",
+                "Edge Testcases should return [2]": "TEST_STATUS_SUCCESS",
+                "Edge Testcases should return an empty array": "TEST_STATUS_SUCCESS",
+                "Edge Testcases should return empty array": "TEST_STATUS_SUCCESS",
+                "Sample Testcases should return [1, 1]": "TEST_STATUS_SUCCESS"
+            },
+            "logPath": "https://storage.googleapis.com/assessment-build-logs-prod/denverdionne-ME_FE2_ES6_PRACTICE/build-706caed5-8068-46bc-adef-ca15fb676b14/unitTesting.log?Expires=1670801672&GoogleAccessId=storage-service%40crio-prod.iam.gserviceaccount.com&Signature=gaD6xxw6%2F6IftsFNNL%2B1avcHIB2UdoO%2FStryE2PPSRydik9kLglFCLfImaK0SvLWxDz2seGRa4bzq8uXYE3z78SPmAOAFAjxO%2BnsisZ6kU6am0JRHgWQUh%2Ff5ubyF%2BnIsYa6HZSp4eSQxgn%2BFOkDtPTKFSAWgJBM4OU9Ztnq74KNNjsAR76pAAXCrxLlo9n0Ur6PHUZFbFKbTK2MphoI2UW%2FvII9jXkQEMltQLts27utJxsIW8KKeAsWGX%2F7qc0fX9t0DQxX8jRj3JOwhGw43siSZbCnyd3CsHc%2F%2FI4cxdz0oyHGnceSFZN0NWQBO4m8EXUTrmkZHKaLvxEPRTkekg%3D%3D"
+        }
+    ],
+    "codeId": 9418177,
+    "buildStatus": "BUILD_STATUS_SUCCESS",
+    "moduleId": "ME_FE2_ES6_PRACTICE_MODULE_ARRAYSIMPLEES6",
+    "buildDurationInMs": 4043,
+    "timestampInMs": 1639265672856
+}
