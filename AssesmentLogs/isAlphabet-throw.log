@@ -1,0 +1,95 @@
+2021-12-12 00:10:51,335 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     CONTAINER_REQUEST_COUNT: 0
+2021-12-12 00:10:51,335 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Fetching me assessment
+2021-12-12 00:10:51,335 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     ME Assessment fetched - {'meId': 'ME_FE2_ES6_PRACTICE', 'stages': [<BuildStageType.BUILD_STAGE_TYPE_SETUP: 'setup'>, <BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING: 'unitTesting'>], 'assessmentEndpoint': 'https://me-fe2-es6-practice-prod-nnjjst7g5q-uc.a.run.app/', 'fargateTaskDefinition': None, 'meFolder': 'me_es6'}
+2021-12-12 00:10:51,336 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Starting assessment
+2021-12-12 00:10:51,826 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Running assessment stage setup
+2021-12-12 00:10:51,826 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     {'buildId': '4f7e90f4-177a-46e8-840d-33a03c3dc1a7', 'userId': 'denverdionne', 'cohortId': 'COHORT_ME_FE2_ES6_PRACTICE_ENROLL_LATEST', 'meId': 'ME_FE2_ES6_PRACTICE', 'moduleId': 'ME_FE2_ES6_PRACTICE_MODULE_THROWES6', 'buildType': 'BUILD_TYPE_SUBMIT', 'assessmentType': 'ASSESSMENT_TYPE_UNTIMED', 'questionId': 'QUESTION_ThrowES6', 'psDsContext': {'codeId': 9418196, 'inputs': [], 'codeData': {'code': 'function isAlphabet(X) {\n  if (checkAlphabet(X)) {\n    return "Yes";\n  } else {\n    throw "Not Alphabet";\n  }\n}\n\nfunction checkAlphabet(X) {\n  let n = X.charCodeAt(0);\n\n  let strStartsWithALetter = (n >= 65 && n < 91) || (n >= 97 && n < 123);\n\n  // You can Google about what is ASCII code to know more about\n\n  // why are we using numbers like 65, 91, 97 & 123\n\n  if (strStartsWithALetter) {\n    // Yes, it starts with an alphabet\n\n    return true;\n  } else {\n    // No, it doesnt start with an alphabet\n\n    return false;\n  }\n}\n\nmodule.exports = isAlphabet;\n/* \nCrio Methodology\n\nMilestone 1: Understand the problem clearly\n1. Ask questions & clarify the problem statement clearly.\n2. Take an example or two to confirm your understanding of the input/output & extend it to test cases\nMilestone 2: Finalize approach & execution plan\n1. Understand what type of problem you are solving.\n     a. Obvious logic, tests ability to convert logic to code\n     b. Figuring out logic\n     c. Knowledge of specific domain or concepts\n     d. Knowledge of specific algorithm\n     e. Mapping real world into abstract concepts/data structures\n2. Brainstorm multiple ways to solve the problem and pick one\n3. Get to a point where you can explain your approach to a 10 year old\n4. Take a stab at the high-level logic & write it down.\n5. Try to offload processing to functions & keeping your main code small.\nMilestone 3: Code by expanding your pseudocode\n1. Make sure you name the variables, functions clearly.\n2. Avoid constants in your code unless necessary; go for generic functions, you can use examples for your thinking though.\n3. Use libraries as much as possible\nMilestone 4: Prove to the interviewer that your code works with unit tests\n1. Make sure you check boundary conditions\n2. Time & storage complexity\n3. Suggest optimizations if applicable\n*/', 'languageType': 'LANGUAGE_TYPE_JAVASCRIPT'}}, 'timestampInMs': 1639267851055, 'meAssessment': {'meId': 'ME_FE2_ES6_PRACTICE', 'stages': [<BuildStageType.BUILD_STAGE_TYPE_SETUP: 'setup'>, <BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING: 'unitTesting'>], 'assessmentEndpoint': 'https://me-fe2-es6-practice-prod-nnjjst7g5q-uc.a.run.app/', 'fargateTaskDefinition': None, 'meFolder': 'me_es6'}, 'workingDir': '//denverdionne-ME_FE2_ES6_PRACTICE-4f7e90f4-177a-46e8-840d-33a03c3dc1a7'}
+2021-12-12 00:10:51,827 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Getting user data...
+2021-12-12 00:10:51,827 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     
+Received user data in 2.193450927734375e-05 seconds
+
+2021-12-12 00:10:51,827 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Getting crio data...
+2021-12-12 00:10:51,829 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     
+Received and unzipped crio data in 0.0016770362854003906 seconds
+
+2021-12-12 00:10:51,829 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     
+Time taken for setup stage: 0.002828836441040039s
+2021-12-12 00:10:51,829 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     BuildStageType.BUILD_STAGE_TYPE_SETUP stage complete. Report: {'userDir': '//denverdionne-ME_FE2_ES6_PRACTICE-4f7e90f4-177a-46e8-840d-33a03c3dc1a7/solution'}
+2021-12-12 00:10:52,320 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Running assessment stage unitTesting
+2021-12-12 00:10:52,321 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Validating syntax...
+2021-12-12 00:10:52,431 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Running the tests...
+2021-12-12 00:10:55,614 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Test logs : 
+> throw@1.0.0 test /denverdionne-ME_FE2_ES6_PRACTICE-4f7e90f4-177a-46e8-840d-33a03c3dc1a7/solution
+> jest "--reporters=jest-junit" "--reporters=default" "--verbose" "--forceExit"
+
+PASS __tests__/solution.test.js
+  isAlphabet function
+    ✓ should return Yes for X = A (3 ms)
+    ✓ should return Yes for X = Z
+    ✓ should return Yes for X = F (1 ms)
+    ✓ should return Yes for X = N
+    ✓ should return Yes for X = a (1 ms)
+    ✓ should return Yes for X = z
+    ✓ should return Yes for X = f (1 ms)
+    ✓ should return Yes for X = n
+    ✓ should throw error for X = 0 (1 ms)
+    ✓ should throw error for X = @
+
+Test Suites: 1 passed, 1 total
+Tests:       10 passed, 10 total
+Snapshots:   0 total
+Time:        0.912 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+
+2021-12-12 00:10:55,615 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Time taken to test code 3.1823697090148926
+2021-12-12 00:10:55,616 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     
+Time taken for unit_testing stage: 3.295114040374756s
+2021-12-12 00:10:55,616 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING stage complete. Report: {'isAlphabet function should return Yes for X = A': 'TEST_STATUS_SUCCESS', 'isAlphabet function should return Yes for X = F': 'TEST_STATUS_SUCCESS', 'isAlphabet function should return Yes for X = N': 'TEST_STATUS_SUCCESS', 'isAlphabet function should return Yes for X = Z': 'TEST_STATUS_SUCCESS', 'isAlphabet function should return Yes for X = a': 'TEST_STATUS_SUCCESS', 'isAlphabet function should return Yes for X = f': 'TEST_STATUS_SUCCESS', 'isAlphabet function should return Yes for X = n': 'TEST_STATUS_SUCCESS', 'isAlphabet function should return Yes for X = z': 'TEST_STATUS_SUCCESS', 'isAlphabet function should throw error for X = 0': 'TEST_STATUS_SUCCESS', 'isAlphabet function should throw error for X = @': 'TEST_STATUS_SUCCESS'}
+2021-12-12 00:10:55,644 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Found bucket assessment-build-logs-prod
+2021-12-12 00:10:55,953 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     
+Files from stages uploaded in 0.30850791931152344 seconds
+
+2021-12-12 00:10:55,953 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     Build Report formed:
+2021-12-12 00:10:55,954 build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7 INFO     {
+    "buildId": "4f7e90f4-177a-46e8-840d-33a03c3dc1a7",
+    "userId": "denverdionne",
+    "meId": "ME_FE2_ES6_PRACTICE",
+    "cohortId": "COHORT_ME_FE2_ES6_PRACTICE_ENROLL_LATEST",
+    "buildType": "BUILD_TYPE_SUBMIT",
+    "questionId": "QUESTION_ThrowES6",
+    "stages": [
+        {
+            "type": "BUILD_STAGE_TYPE_SETUP",
+            "status": "BUILD_STAGE_STATUS_SUCCESS",
+            "feedback": null,
+            "report": {
+                "userDir": "//denverdionne-ME_FE2_ES6_PRACTICE-4f7e90f4-177a-46e8-840d-33a03c3dc1a7/solution"
+            },
+            "logPath": "https://storage.googleapis.com/assessment-build-logs-prod/denverdionne-ME_FE2_ES6_PRACTICE/build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7/setup.log?Expires=1670803855&GoogleAccessId=storage-service%40crio-prod.iam.gserviceaccount.com&Signature=VeZyS%2BWjJycpG1RkqWbFVZQoq2bgglsw0E9fGMM7ACETdUAus4eLzuZcd3XjQGuu7CVako%2FkFAWzTBm%2BWBvjp1HCWGONxtc2rYO0gsJHwiFRfHOAQnMhVPg%2B4y%2BCltfCZAjcPzKaK62HG%2B2Rh9vZ2ue2xbtZEDcradRcsE78NeG3T%2BPOAyzIRCxgkXjExklhU6lpQax0NvoxfArD46vnMQXiKDRPzS867lqZF6jz25VdouUNaOIAWDiZB3k4oJZqkpRZXchMaRwGGmt8StpyDWdUKZ7eSW2pd2nPtq8f%2BdMSbyaGUE4kc9oIAvITxHM27N5cXtNgcr%2BNL7uCQtvq9g%3D%3D"
+        },
+        {
+            "type": "BUILD_STAGE_TYPE_UNIT_TESTING",
+            "status": "BUILD_STAGE_STATUS_SUCCESS",
+            "feedback": null,
+            "report": {
+                "isAlphabet function should return Yes for X = A": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should return Yes for X = F": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should return Yes for X = N": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should return Yes for X = Z": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should return Yes for X = a": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should return Yes for X = f": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should return Yes for X = n": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should return Yes for X = z": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should throw error for X = 0": "TEST_STATUS_SUCCESS",
+                "isAlphabet function should throw error for X = @": "TEST_STATUS_SUCCESS"
+            },
+            "logPath": "https://storage.googleapis.com/assessment-build-logs-prod/denverdionne-ME_FE2_ES6_PRACTICE/build-4f7e90f4-177a-46e8-840d-33a03c3dc1a7/unitTesting.log?Expires=1670803855&GoogleAccessId=storage-service%40crio-prod.iam.gserviceaccount.com&Signature=kHPmepaRrTy9%2BCeyQlBZnlXlHOtdxc0bCzLt1g6GYoPYk52RetkEVHZuGmzKTYjW5VAt7V2lo2ZGP4%2FgR5%2FxLKvoSH4gebRMTrjO89Ny4ZMt1uOAu9L1L2znvmQAmVjxMm2DRWXHBPtJ1ywPZvKfvsI%2Bu2eXrNqLVGHHlk2mzz7ULoY7ol2xjbq2sCBcuvB%2BPB5LqFpsE4jPp9Skh0TuLPOj%2Fd7gsSfXz6XqMj059ccCZJXyZeqX%2B2AJI2GsaecoDdvtNtj9G4wUpF3MJb80ApYW48kZtzIq%2F4Fx%2FN0I%2BqA3DGCzHW8O6L3%2FAUqdeQ0JYLzgiJTEIbq9s5FOkY9r%2FA%3D%3D"
+        }
+    ],
+    "codeId": 9418196,
+    "buildStatus": "BUILD_STATUS_SUCCESS",
+    "moduleId": "ME_FE2_ES6_PRACTICE_MODULE_THROWES6",
+    "buildDurationInMs": 4617,
+    "timestampInMs": 1639267855954
+}
