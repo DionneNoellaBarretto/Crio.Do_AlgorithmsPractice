@@ -1,0 +1,81 @@
+2021-12-12 00:04:21,745 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     CONTAINER_REQUEST_COUNT: 0
+2021-12-12 00:04:21,745 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Fetching me assessment
+2021-12-12 00:04:21,745 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     ME Assessment fetched - {'meId': 'ME_FE2_ES6_PRACTICE', 'stages': [<BuildStageType.BUILD_STAGE_TYPE_SETUP: 'setup'>, <BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING: 'unitTesting'>], 'assessmentEndpoint': 'https://me-fe2-es6-practice-prod-nnjjst7g5q-uc.a.run.app/', 'fargateTaskDefinition': None, 'meFolder': 'me_es6'}
+2021-12-12 00:04:21,746 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Starting assessment
+2021-12-12 00:04:22,245 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Running assessment stage setup
+2021-12-12 00:04:22,246 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     {'buildId': 'b6d6b30f-95e7-464e-9f27-9c88c33d4472', 'userId': 'denverdionne', 'cohortId': 'COHORT_ME_FE2_ES6_PRACTICE_ENROLL_LATEST', 'meId': 'ME_FE2_ES6_PRACTICE', 'moduleId': 'ME_FE2_ES6_PRACTICE_MODULE_TRYCATCHES6', 'buildType': 'BUILD_TYPE_SUBMIT', 'assessmentType': 'ASSESSMENT_TYPE_UNTIMED', 'questionId': 'QUESTION_TryCatchES6', 'psDsContext': {'codeId': 9418188, 'inputs': [], 'codeData': {'code': '\nfunction errorHandler(x) {\n  try {\n    let y = getX(x);\n    return y;\n  } catch (err) {\n    return err;\n  }\n}\n\nfunction getX(x) {\n  if (x == 5) {\n    return new Error("Error Occured");\n  }\n  return x;\n}\n\nmodule.exports = errorHandler;\n/* \nCrio Methodology\n\nMilestone 1: Understand the problem clearly\n1. Ask questions & clarify the problem statement clearly.\n2. Take an example or two to confirm your understanding of the input/output & extend it to test cases\nMilestone 2: Finalize approach & execution plan\n1. Understand what type of problem you are solving.\n     a. Obvious logic, tests ability to convert logic to code\n     b. Figuring out logic\n     c. Knowledge of specific domain or concepts\n     d. Knowledge of specific algorithm\n     e. Mapping real world into abstract concepts/data structures\n2. Brainstorm multiple ways to solve the problem and pick one\n3. Get to a point where you can explain your approach to a 10 year old\n4. Take a stab at the high-level logic & write it down.\n5. Try to offload processing to functions & keeping your main code small.\nMilestone 3: Code by expanding your pseudocode\n1. Make sure you name the variables, functions clearly.\n2. Avoid constants in your code unless necessary; go for generic functions, you can use examples for your thinking though.\n3. Use libraries as much as possible\nMilestone 4: Prove to the interviewer that your code works with unit tests\n1. Make sure you check boundary conditions\n2. Time & storage complexity\n3. Suggest optimizations if applicable\n*/', 'languageType': 'LANGUAGE_TYPE_JAVASCRIPT'}}, 'timestampInMs': 1639267461493, 'meAssessment': {'meId': 'ME_FE2_ES6_PRACTICE', 'stages': [<BuildStageType.BUILD_STAGE_TYPE_SETUP: 'setup'>, <BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING: 'unitTesting'>], 'assessmentEndpoint': 'https://me-fe2-es6-practice-prod-nnjjst7g5q-uc.a.run.app/', 'fargateTaskDefinition': None, 'meFolder': 'me_es6'}, 'workingDir': '//denverdionne-ME_FE2_ES6_PRACTICE-b6d6b30f-95e7-464e-9f27-9c88c33d4472'}
+2021-12-12 00:04:22,246 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Getting user data...
+2021-12-12 00:04:22,246 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     
+Received user data in 2.4080276489257812e-05 seconds
+
+2021-12-12 00:04:22,246 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Getting crio data...
+2021-12-12 00:04:22,248 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     
+Received and unzipped crio data in 0.0018169879913330078 seconds
+
+2021-12-12 00:04:22,248 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     
+Time taken for setup stage: 0.002846956253051758s
+2021-12-12 00:04:22,248 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     BuildStageType.BUILD_STAGE_TYPE_SETUP stage complete. Report: {'userDir': '//denverdionne-ME_FE2_ES6_PRACTICE-b6d6b30f-95e7-464e-9f27-9c88c33d4472/solution'}
+2021-12-12 00:04:22,739 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Running assessment stage unitTesting
+2021-12-12 00:04:22,740 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Validating syntax...
+2021-12-12 00:04:22,835 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Running the tests...
+2021-12-12 00:04:25,607 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Test logs : 
+> trycatch@1.0.0 test /denverdionne-ME_FE2_ES6_PRACTICE-b6d6b30f-95e7-464e-9f27-9c88c33d4472/solution
+> jest "--reporters=jest-junit" "--reporters=default" "--verbose" "--forceExit"
+
+PASS __tests__/solution.test.js
+  errorHandler function
+    ✓ should return 0 for x = 0 (3 ms)
+    ✓ should return 3 for x = 3
+    ✓ should return error for x = 5 (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        0.793 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?
+
+2021-12-12 00:04:25,607 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Time taken to test code 2.770641565322876
+2021-12-12 00:04:25,608 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     
+Time taken for unit_testing stage: 2.8686277866363525s
+2021-12-12 00:04:25,608 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     BuildStageType.BUILD_STAGE_TYPE_UNIT_TESTING stage complete. Report: {'errorHandler function should return 0 for x = 0': 'TEST_STATUS_SUCCESS', 'errorHandler function should return 3 for x = 3': 'TEST_STATUS_SUCCESS', 'errorHandler function should return error for x = 5': 'TEST_STATUS_SUCCESS'}
+2021-12-12 00:04:25,637 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Found bucket assessment-build-logs-prod
+2021-12-12 00:04:25,776 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     
+Files from stages uploaded in 0.13786745071411133 seconds
+
+2021-12-12 00:04:25,776 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     Build Report formed:
+2021-12-12 00:04:25,776 build-b6d6b30f-95e7-464e-9f27-9c88c33d4472 INFO     {
+    "buildId": "b6d6b30f-95e7-464e-9f27-9c88c33d4472",
+    "userId": "denverdionne",
+    "meId": "ME_FE2_ES6_PRACTICE",
+    "cohortId": "COHORT_ME_FE2_ES6_PRACTICE_ENROLL_LATEST",
+    "buildType": "BUILD_TYPE_SUBMIT",
+    "questionId": "QUESTION_TryCatchES6",
+    "stages": [
+        {
+            "type": "BUILD_STAGE_TYPE_SETUP",
+            "status": "BUILD_STAGE_STATUS_SUCCESS",
+            "feedback": null,
+            "report": {
+                "userDir": "//denverdionne-ME_FE2_ES6_PRACTICE-b6d6b30f-95e7-464e-9f27-9c88c33d4472/solution"
+            },
+            "logPath": "https://storage.googleapis.com/assessment-build-logs-prod/denverdionne-ME_FE2_ES6_PRACTICE/build-b6d6b30f-95e7-464e-9f27-9c88c33d4472/setup.log?Expires=1670803465&GoogleAccessId=storage-service%40crio-prod.iam.gserviceaccount.com&Signature=lHm%2FWY8kiPHtGVOYBORaLu4Nk3HM5%2FMOFwPGlDuZG4P7rO0DI%2Bb9Vn2AGXPaRKosBf5E09UL23Z5k9QmF8IyeJqUqzkkGQdUfQBSExErx5AoZR5QjFbgeJDbp%2B8lnvt8EbuI41cGhEqx3difWX80B3C%2FGkbGcP8cjk7JHcJGVxkpO4%2BCB1IRnAQwHE8mXmkmM4n7DWuEQItBRfXPdgytCvQgFI2uC1LK0l9t8N5wrI3cOcW689jnF1DX1zoDaf3zdpf89CZCr9Nxaa9WyCp57QdYMYWw96w7g%2FpOWcDNj9HbsMGNYWDai2a176wFdXn5DKUv%2Bo4WH7t0CwROkq1ssg%3D%3D"
+        },
+        {
+            "type": "BUILD_STAGE_TYPE_UNIT_TESTING",
+            "status": "BUILD_STAGE_STATUS_SUCCESS",
+            "feedback": null,
+            "report": {
+                "errorHandler function should return 0 for x = 0": "TEST_STATUS_SUCCESS",
+                "errorHandler function should return 3 for x = 3": "TEST_STATUS_SUCCESS",
+                "errorHandler function should return error for x = 5": "TEST_STATUS_SUCCESS"
+            },
+            "logPath": "https://storage.googleapis.com/assessment-build-logs-prod/denverdionne-ME_FE2_ES6_PRACTICE/build-b6d6b30f-95e7-464e-9f27-9c88c33d4472/unitTesting.log?Expires=1670803465&GoogleAccessId=storage-service%40crio-prod.iam.gserviceaccount.com&Signature=tQvk8lfYzB8%2FCI9%2F9FnYrm8JXXBcPg%2Bqw3zBLcOdwU4QEHrKghKmriwSFM8FKKd5keybkH2be9MLquuclpWy5RFzVn8L%2BUbA4v1CePy%2BKf5ApTRajCzEf899YqQonMMF1bXMz9Pi0Zy%2BMnKI%2F64qqWi%2BidJ2hXOPWGPBFL2PRHJ5THfsJioc%2B4kRx2gsjvzB%2BcG7MKQTO%2BAPII8EcicjGdvCo4X5J8A%2FrBPlk7agqP9vKh8kM8Ki82Yf6hHnyAK9sw3ZO4oYpQWpMbhIxMAZ%2F4pK9mbL%2FWw75gjFSReMJYwcUktE%2FYFKYk23HQJDKhvKtdQ6moYFGkSjkIt4FmkjiA%3D%3D"
+        }
+    ],
+    "codeId": 9418188,
+    "buildStatus": "BUILD_STATUS_SUCCESS",
+    "moduleId": "ME_FE2_ES6_PRACTICE_MODULE_TRYCATCHES6",
+    "buildDurationInMs": 4030,
+    "timestampInMs": 1639267465776
+}
